@@ -249,7 +249,7 @@ main {
 
 .button-2 {
     position: relative;
-    bottom: 2.5vh;
+    bottom:50px;
     width: 50px;
     height: 50px;
     background-color: blueviolet;
@@ -260,6 +260,7 @@ main {
 
 .button-3 {
     position: relative;
+    
     width: 50px;
     height: 50px;
     background-color: blueviolet;
@@ -269,9 +270,9 @@ main {
 }
 
 .button-4 {
-    position: relative;
-    top: 2.5vh;
-    right: 9.5vh;
+    position:relative;
+    top: 50px;
+    right: 95px;
     width: 50px;
     height: 50px;
     background-color: blueviolet;
@@ -280,13 +281,13 @@ main {
     border-radius: 10px;
 }
 
-@media screen and (max-width:1629px) {
+/* @media screen and (max-width:1629px) {
     .button-4 {
         right: 10.35vh;
         top: 3vh;
     }
 
-}
+} */
 
 @media screen and (max-width:1629px) {
     .left-right-up-down {
