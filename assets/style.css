@@ -231,6 +231,9 @@ main {
 }
 
 .left-right-up-down {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 2vh;
 }
 
@@ -268,7 +271,7 @@ main {
 .button-4 {
     position: relative;
     top: 2.5vh;
-    right: 10.3vh;
+    right: 9.5vh;
     width: 50px;
     height: 50px;
     background-color: blueviolet;
@@ -279,7 +282,7 @@ main {
 
 @media screen and (max-width:1629px) {
     .button-4 {
-        right: 11.15vh;
+        right: 10.35vh;
         top: 3vh;
     }
 
