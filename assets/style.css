@@ -13,8 +13,8 @@ main {
 
 @media screen and (min-width:705px) {
     .card {
-        width: 50rem;
-        height: 80rem;
+        width: 80vh;
+        height: 100%;
     }
 }
 
@@ -291,8 +291,8 @@ main {
 
 @media screen and (max-width:1629px) {
     .left-right-up-down {
-        margin-top: 5vh;
-        margin-bottom: 2vh;
+        margin-top: 8vh;
+        margin-bottom: 3vh;
     }
 
 }
