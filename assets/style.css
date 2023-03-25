@@ -8,14 +8,14 @@ main {
     border-radius: 10px;
     background-color: rgb(224, 32, 71);
     box-shadow: 0px 10px 10px 10px rgb(167, 39, 39);
-    width: 70%;
+    width: 50%;
     height: 100%;
 }
 
-@media screen and (min-width:705px) {
+@media screen and (max-width:974px) {
     .card {
-        width: 70%;
-        height: 100%;
+        width: max-content;
+        height: max-content;
     }
 }
 
@@ -250,7 +250,7 @@ main {
 
 .button-2 {
     position: relative;
-    bottom:50px;
+    bottom: 50px;
     width: 50px;
     height: 50px;
     background-color: blueviolet;
@@ -261,7 +261,7 @@ main {
 
 .button-3 {
     position: relative;
-    
+
     width: 50px;
     height: 50px;
     background-color: blueviolet;
@@ -271,7 +271,7 @@ main {
 }
 
 .button-4 {
-    position:relative;
+    position: relative;
     top: 50px;
     right: 95px;
     width: 50px;
@@ -391,6 +391,13 @@ main {
     margin-right: 19vh;
     margin-bottom: 2vh;
 }
+
+/* @media screen and (max-width:705px) {
+    .keyboard {
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
 
 .keyboard .letter-button {
     margin-right: 0.5vh;
