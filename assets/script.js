@@ -1,18 +1,10 @@
 let buttonListEl = $(".keyboard");
 var letters = [
-    'Q',
-    'W',
-    'E',
-    'R',
-    'T',
-    'Y',
-    'U',
-    'I',
-    'O',
-    'P',
     'A',
-    'S',
+    'B',
+    'C',
     'D',
+    'E',
     'F',
     'G',
     'H',
@@ -20,13 +12,20 @@ var letters = [
     'J',
     'K',
     'L',
-    'Z',
-    'X',
-    'C',
-    'V',
-    'B',
-    'N',
     'M',
+    'N',
+    'O',
+    'P',
+    'Q',
+    'R',
+    'S',
+    'T',
+    'U',
+    'V',
+    'W',
+    'X',
+    'Y',
+    'Z',
     '_',
 ];
 
@@ -55,7 +54,108 @@ buttonListEl.on('click', '.letter-button', function (event) {
 
 });
 
-
+function poke_color(data, newUl){
+    if(data.types[0].type.name==="fire"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#ffb402, #e37c42);");
+        }
+    }
+    if(data.types[0].type.name==="grass"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#04810e, #42e35b);");
+        }
+    }
+    if(data.types[0].type.name==="water"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#046da1, #5ac8e8);");
+        }
+    }
+    if(data.types[0].type.name==="normal"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#a8a77a, #ecebd8);");
+        }
+    }
+    if(data.types[0].type.name==="electric"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#f7d02c, #ffec9e);");
+        }
+    }
+    if(data.types[0].type.name==="ice"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#96d9d6, #bcd9d7);");
+        }
+    }
+    if(data.types[0].type.name==="fighting"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#c22e28, #b66865);");
+        }
+    }
+    if(data.types[0].type.name==="poison"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#a33ea1, #a68da5);");
+        }
+    }
+    if(data.types[0].type.name==="poison"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#a33ea1, #a68da5);");
+        }
+    }
+    if(data.types[0].type.name==="ground"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#e2bf65, #d1b97c);");
+        }
+    }
+    if(data.types[0].type.name==="normal" && data.types[1].type.name==="flying"){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#A98FF3, #d6cbf5);");
+        }
+    }
+    if(data.types[0].type.name==="flying" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#A98FF3, #d6cbf5);");
+        }
+    }
+    if(data.types[0].type.name==="psychic" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#f95587, #ffc7d8);");
+        }
+    }
+    if(data.types[0].type.name==="bug" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#a6b91a, #a9b073);");
+        }
+    }
+    if(data.types[0].type.name==="rock" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#B6A136, #c6c0a6);");
+        }
+    }
+    if(data.types[0].type.name==="ghost" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#735797, #716382);");
+        }
+    }
+    if(data.types[0].type.name==="dragon" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#6F35FC, #c2a8ff);");
+        }
+    }
+    if(data.types[0].type.name==="dark" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#705746, #2a2929); color:white;");
+        }
+    }
+    if(data.types[0].type.name==="steel" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#b7b7ce, #c4c4d2);");
+        }
+    }
+    if(data.types[0].type.name==="fairy" ){
+        for(let i =0; i<5; i++){
+            newUl.children[i].setAttribute("style","background: linear-gradient(#D685AD, #f6b1d3);");
+        }
+    }
+}
 
 let searchButton = document.querySelector('.search-pokemon');
 
@@ -86,7 +186,7 @@ let pokemon = function (api) {
                         return response.json();
                     })
                     .then(function (data) {
-                        console.log(data.sprites.front_default);
+                        // console.log(data.sprites.other.dream_world.front_default);
                         let newImg = document.createElement('img');
                         newImg.setAttribute("src", data.sprites.front_default);
                         newLi.append(newImg)
@@ -132,14 +232,19 @@ pokemonList.on('click', '.pokemon-list', function (event) {
                 newLi3.textContent = "Type: " + data.types[0].type.name;
             }
 
-            newLi4.textContent = "Ability: " + data.abilities[0].ability.name + " / " + data.abilities[1].ability.name;
+            if(data.abilities.length === 2){
+                newLi4.textContent = "Ability: " + data.abilities[0].ability.name + " / " + data.abilities[1].ability.name;
+            }else{
+                newLi4.textContent = "Ability: " + data.abilities[0].ability.name;
+            }
+            
             for (let i = 0; i < data.stats.length; i++) {
                 let newDivStat = document.createElement('div');
                 newDivStat.textContent = data.stats[i].stat.name + ": " + data.stats[i].base_stat;
                 newLi5.append(newDivStat);
             }
             let newImg = document.createElement('img');
-            newImg.setAttribute('src', data.sprites.front_default)
+            newImg.setAttribute('src', data.sprites.other.dream_world.front_default)
             newImg.setAttribute("style", "width:150px; height:150px;")
             newLi1.append(newImg);
             newUl.append(newLi1);
@@ -147,6 +252,29 @@ pokemonList.on('click', '.pokemon-list', function (event) {
             newUl.append(newLi3);
             newUl.append(newLi4);
             newUl.append(newLi5);
+            // const colours = {
+            //     normal: '#A8A77A',
+            //     fire: '#EE8130',
+            //     water: '#6390F0',
+            //     electric: '#F7D02C',
+            //     grass: '#7AC74C',
+            //     ice: '#96D9D6',
+            //     fighting: '#C22E28',
+            //     poison: '#A33EA1',
+            //     ground: '#E2BF65',
+            //     flying: '#A98FF3',
+            //     psychic: '#F95587',
+            //     bug: '#A6B91A',
+            //     rock: '#B6A136',
+            //     ghost: '#735797',
+            //     dragon: '#6F35FC',
+            //     dark: '#705746',
+            //     steel: '#B7B7CE',
+            //     fairy: '#D685AD',
+            // };
+            poke_color(data, newUl);
+
+
         });
 
 });
@@ -211,6 +339,7 @@ searchButton.addEventListener('click', function () {
             newUl.append(newLi3);
             newUl.append(newLi4);
             newUl.append(newLi5);
+            poke_color(data, newUl);
         });
 
 });
