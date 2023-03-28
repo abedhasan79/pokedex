@@ -292,6 +292,7 @@ claerInput.addEventListener('click', function () {
 
 
 searchButton.addEventListener('click', function () {
+    $('.single-poke-info').text("");
     let searchVal = letterOnSearch.value.toLowerCase();
     let pokeApi2 = "https://pokeapi.co/api/v2/pokemon/" + searchVal;
 
@@ -315,6 +316,7 @@ searchButton.addEventListener('click', function () {
             let newLi3 = document.createElement('li');
             let newLi4 = document.createElement('li');
             let newLi5 = document.createElement('li');
+            
 
             newLi2.textContent = data.name;
             console.log(data.types.length);
@@ -323,15 +325,19 @@ searchButton.addEventListener('click', function () {
             } else {
                 newLi3.textContent = "Type: " + data.types[0].type.name;
             }
-
-            newLi4.textContent = "Ability: " + data.abilities[0].ability.name + " / " + data.abilities[1].ability.name;
+            if(data.abilities.length === 2){
+                newLi4.textContent = "Ability: " + data.abilities[0].ability.name + " / " + data.abilities[1].ability.name;
+            }else{
+                newLi4.textContent = "Ability: " + data.abilities[0].ability.name;
+            }
+        
             for (let i = 0; i < data.stats.length; i++) {
                 let newDivStat = document.createElement('div');
                 newDivStat.textContent = data.stats[i].stat.name + ": " + data.stats[i].base_stat;
                 newLi5.append(newDivStat);
             }
             let newImg = document.createElement('img');
-            newImg.setAttribute('src', data.sprites.front_default)
+            newImg.setAttribute('src', data.sprites.other.dream_world.front_default)
             newImg.setAttribute("style", "width:150px; height:150px;")
             newLi1.append(newImg);
             newUl.append(newLi1);
