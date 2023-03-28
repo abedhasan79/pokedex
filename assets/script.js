@@ -56,140 +56,140 @@ buttonListEl.on('click', '.letter-button', function (event) {
 
 function poke_color(data, newUl){
     if(data.types[0].type.name==="fire"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#ffb402, #e37c42)");
             $(".poke-info").css("background", "linear-gradient(#ffb402, #e37c42)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#ffb402, #e37c42);");
         }
     }
     if(data.types[0].type.name==="grass"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#04810e, #42e35b)");
             $(".poke-info").css("background", "linear-gradient(#04810e, #42e35b)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#04810e, #42e35b);");
         }
     }
     if(data.types[0].type.name==="water"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#046da1, #5ac8e8)");
             $(".poke-info").css("background", "linear-gradient(#046da1, #5ac8e8)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#046da1, #5ac8e8);");
         }
     }
     if(data.types[0].type.name==="normal"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#a8a77a, #ecebd8)");
             $(".poke-info").css("background", "linear-gradient(#a8a77a, #ecebd8)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#a8a77a, #ecebd8);");
         }
     }
     if(data.types[0].type.name==="electric"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#f7d02c, #ffec9e)");
             $(".poke-info").css("background", "linear-gradient(#f7d02c, #ffec9e)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#f7d02c, #ffec9e);");
         }
     }
     if(data.types[0].type.name==="ice"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#96d9d6, #bcd9d7)");
             $(".poke-info").css("background", "linear-gradient(#96d9d6, #bcd9d7)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#96d9d6, #bcd9d7);");
         }
     }
     if(data.types[0].type.name==="fighting"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#c22e28, #b66865)");
             $(".poke-info").css("background", "linear-gradient(#c22e28, #b66865)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#c22e28, #b66865);");
         }
     }
     if(data.types[0].type.name==="poison"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#a33ea1, #a68da5)");
             $(".poke-info").css("background", "linear-gradient(#a33ea1, #a68da5)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#a33ea1, #a68da5);");
         }
     }
     if(data.types[0].type.name==="poison"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#a33ea1, #a68da5)");
             $(".poke-info").css("background", "linear-gradient(#a33ea1, #a68da5)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#a33ea1, #a68da5);");
         }
     }
     if(data.types[0].type.name==="ground"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#e2bf65, #d1b97c)");
             $(".poke-info").css("background", "linear-gradient(#e2bf65, #d1b97c)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#e2bf65, #d1b97c);");
         }
     }
     if(data.types[0].type.name==="normal" && data.types[1].type.name==="flying"){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#A98FF3, #d6cbf5)");
             $(".poke-info").css("background", "linear-gradient(#A98FF3, #d6cbf5)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#A98FF3, #d6cbf5);");
         }
     }
     if(data.types[0].type.name==="flying" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#A98FF3, #d6cbf5)");
             $(".poke-info").css("background", "linear-gradient(#A98FF3, #d6cbf5)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#A98FF3, #d6cbf5);");
         }
     }
     if(data.types[0].type.name==="psychic" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#f95587, #ffc7d8)");
             $(".poke-info").css("background", "linear-gradient(#f95587, #ffc7d8)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#f95587, #ffc7d8);");
         }
     }
     if(data.types[0].type.name==="bug" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#a6b91a, #a9b073)");
             $(".poke-info").css("background", "linear-gradient(#a6b91a, #a9b073)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#a6b91a, #a9b073);");
         }
     }
     if(data.types[0].type.name==="rock" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#B6A136, #c6c0a6)");
             $(".poke-info").css("background", "linear-gradient(#B6A136, #c6c0a6)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#B6A136, #c6c0a6);");
         }
     }
     if(data.types[0].type.name==="ghost" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#735797, #716382)");
             $(".poke-info").css("background", "linear-gradient(#735797, #716382)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#735797, #716382);");
         }
     }
     if(data.types[0].type.name==="dragon" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#6F35FC, #c2a8ff)");
             $(".poke-info").css("background", "linear-gradient(#6F35FC, #c2a8ff)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#6F35FC, #c2a8ff);");
         }
     }
     if(data.types[0].type.name==="dark" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#705746, #2a2929)");
             $(".poke-info").css("background", "linear-gradient(#705746, #2a2929)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#705746, #2a2929); color:white;");
         }
     }
     if(data.types[0].type.name==="steel" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#b7b7ce, #c4c4d2)");
             $(".poke-info").css("background", "linear-gradient(#b7b7ce, #c4c4d2)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#b7b7ce, #c4c4d2);");
         }
     }
     if(data.types[0].type.name==="fairy" ){
-        for(let i =0; i<5; i++){
+        for(let i =0; i<6; i++){
             $(".image-border").css("background", "linear-gradient(#D685AD, #f6b1d3)");
             $(".poke-info").css("background", "linear-gradient(#D685AD, #f6b1d3)")
             newUl.children[i].setAttribute("style","background: linear-gradient(#D685AD, #f6b1d3);");
@@ -274,7 +274,7 @@ pokemonList.on('click', '.pokemon-list', function (event) {
             let newLi3 = document.createElement('li');
             let newLi4 = document.createElement('li');
             let newLi5 = document.createElement('li');
-
+            let newLi6 = document.createElement('li');
             newLi2.textContent = data.name;
             console.log(data.types.length);
             if (data.types.length === 2) {
@@ -294,7 +294,9 @@ pokemonList.on('click', '.pokemon-list', function (event) {
                 newDivStat.textContent = data.stats[i].stat.name + ": " + data.stats[i].base_stat;
                 newLi5.append(newDivStat);
             }
+
             let newImg = document.createElement('img');
+            
             newImg.setAttribute('src', data.sprites.other.dream_world.front_default)
             newImg.setAttribute("style", "width:150px; height:150px;")
             newLi1.append(newImg);
@@ -303,6 +305,15 @@ pokemonList.on('click', '.pokemon-list', function (event) {
             newUl.append(newLi3);
             newUl.append(newLi4);
             newUl.append(newLi5);
+            fetch(`https://pokeapi.co/api/v2/pokemon-species/${data.id}/`)
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(data){
+                    console.log(data)
+                    newLi6.textContent = `${data.flavor_text_entries[0].flavor_text}`;
+                    newUl.append(newLi6);
+                });
             // const colours = {
             //     normal: '#A8A77A',
             //     fire: '#EE8130',
@@ -369,6 +380,7 @@ searchButton.addEventListener('click', function () {
             let newLi3 = document.createElement('li');
             let newLi4 = document.createElement('li');
             let newLi5 = document.createElement('li');
+            let newLi6 = document.createElement('li');
             
 
             newLi2.textContent = data.name;
@@ -398,6 +410,15 @@ searchButton.addEventListener('click', function () {
             newUl.append(newLi3);
             newUl.append(newLi4);
             newUl.append(newLi5);
+            fetch(`https://pokeapi.co/api/v2/pokemon-species/${data.id}/`)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                console.log(data)
+                newLi6.textContent = `${data.flavor_text_entries[0].flavor_text}`;
+                newUl.append(newLi6);
+            });
             poke_color(data, newUl);
         });
 
