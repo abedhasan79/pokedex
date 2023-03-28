@@ -249,7 +249,8 @@ main {
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background: linear-gradient(rgb(88, 26, 104),rgb(157, 135, 175));
     box-shadow: 10px 10px 10px black;
     font-size: 30px;
     border-radius: 10px;
@@ -260,7 +261,7 @@ main {
     bottom: 50px;
     width: 50px;
     height: 50px;
-    background-color: blueviolet;
+    background: linear-gradient(rgb(88, 26, 104),rgb(157, 135, 175));
     box-shadow: 10px 10px 10px black;
     font-size: 30px;
     border-radius: 10px;
@@ -271,7 +272,7 @@ main {
 
     width: 50px;
     height: 50px;
-    background-color: blueviolet;
+    background: linear-gradient(rgb(88, 26, 104),rgb(157, 135, 175));
     box-shadow: 10px 10px 10px black;
     font-size: 30px;
     border-radius: 10px;
@@ -283,7 +284,7 @@ main {
     right: 95px;
     width: 50px;
     height: 50px;
-    background-color: blueviolet;
+    background: linear-gradient(rgb(88, 26, 104),rgb(157, 135, 175));
     box-shadow: 10px 10px 10px black;
     font-size: 30px;
     border-radius: 10px;
