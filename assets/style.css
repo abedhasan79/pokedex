@@ -1,9 +1,11 @@
+body{
+    background-color: rgb(41, 37, 37);
+}
 main {
     display: flex;
     justify-content: center;
     background-color: rgb(41, 37, 37);
 }
-
 .card {
     border-radius: 10px;
     background-color: rgb(224, 32, 71);
