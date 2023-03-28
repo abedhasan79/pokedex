@@ -179,7 +179,7 @@ let pokemon = function (api) {
                 let newLi = document.createElement('li');
                 newLi.setAttribute('class', `pokemon-list`)
                 newLi.textContent = data.results[i].name;
-                newLi.setAttribute('value', data.results[i].name)
+                // newLi.setAttribute('value', data.results[i].name)
                 newUl.append(newLi);
                 fetch(pokeUrl)
                     .then(function (response) {
@@ -189,6 +189,7 @@ let pokemon = function (api) {
                         // console.log(data.sprites.other.dream_world.front_default);
                         let newImg = document.createElement('img');
                         newImg.setAttribute("src", data.sprites.front_default);
+                        newImg.textContent=data.name;
                         newLi.append(newImg)
                     });
             }
@@ -200,8 +201,18 @@ let pokemon = function (api) {
 var pokemonList = $('.pokemon-list-parent');
 
 pokemonList.on('click', '.pokemon-list', function (event) {
-    let pokeName = event.target.textContent;
-    let pokeApi2 = "https://pokeapi.co/api/v2/pokemon/" + pokeName;
+    console.log(event.target.tagName === "IMG")
+    let pokeName;
+    let res;
+    if(event.target.tagName != "IMG"){
+        pokeName = event.target.textContent;
+        res = pokeName.slice(0, (pokeName.length/2));
+    }else{
+        res = event.target.textContent;
+    }
+    
+    console.log(pokeName)
+    let pokeApi2 = "https://pokeapi.co/api/v2/pokemon/" + res;
 
     console.log(pokeApi2)
 
