@@ -76,9 +76,9 @@ const colours = {
 };
 
 function poke_color(data, newUl) {
-    $(".image-border").css("background", "linear-gradient("+colours[data.types[0].type.name]+ ",#e37c42)");
-    $(".poke-info").css("background", "linear-gradient("+colours[data.types[0].type.name]+ ",#e37c42)");
-    newUl.children[i].setAttribute("style", "linear-gradient("+colours[data.types[0].type.name]+ ",#e37c42)");
+    $(".image-border").css("background", "linear-gradient("+colours[data.types[0].type.name]+ ",#edeaf4)");
+    $(".poke-info").css("background", "linear-gradient("+colours[data.types[0].type.name]+ ",#edeaf4)");
+    newUl.children[i].setAttribute("style", "linear-gradient("+colours[data.types[0].type.name]+ ",#edeaf4)");
 }
 
 let searchButton = document.querySelector('.search-pokemon');
